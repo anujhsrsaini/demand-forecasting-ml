@@ -58,14 +58,14 @@ Below is the embedded prediction-vs-actual chart demonstrating the model's recur
     pip install -r requirements.txt
     ```
 3.  **Configure credentials:**
-    Add a `.env` file to the root directory with the database connection details:
+    Create a `.env` file in the root directory and add your database connection details:
     ```text
-    Host=aws-0-ap-south-1.pooler.supabase.com
+    Host=your-database-host-url
     Port=5432
     Database=postgres
     Schema=ecom
-    Username=ecom_ro_user.imnzftquwjuxcwpeufwp
-    Password=work-experience-read-only
+    Username=your-read-only-username
+    Password=your-read-only-password
     ```
 4.  **Run the notebooks:**
     Launch Jupyter or run the notebooks sequentially via `jupyter nbconvert --execute --inplace notebooks/*.ipynb`.
